@@ -1,0 +1,14 @@
+target
+.classpath
+.project
+.settings
+.build/
+.idea/
+.vscode/
+/*.pdf
+/*.epub
+/*.html/
+/libs/
+/cotuba.sh
+/lab/cotuba-cli-0.0.1-SNAPSHOT-distribution/*
+
