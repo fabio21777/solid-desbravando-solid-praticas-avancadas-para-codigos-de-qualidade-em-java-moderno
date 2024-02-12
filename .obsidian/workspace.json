@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cap-2/cap-2 - Conhecendo cotuba.md",
+                "file": "cap-3/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cap-2/cap-2 - Conhecendo cotuba.md",
+                "file": "cap-3/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cap-2/cap-2 - Conhecendo cotuba.md",
+                "file": "cap-3/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cap-2/cap-2 - Conhecendo cotuba.md"
+                "file": "cap-3/README.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "5c69a4e66540e443",
   "lastOpenFiles": [
+    "cap-2/README.md",
+    "cap-3/README.md",
+    "cap-3",
     "README.md",
     "cap-2/cap-2.md",
     "Sem título.md",
