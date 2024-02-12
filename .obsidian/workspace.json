@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cap-3/README.md",
+                "file": "cap-4/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "eb859239d2ac4fae",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cap-3/README.md",
+                "file": "cap-4/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cap-3/README.md",
+                "file": "cap-4/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cap-3/README.md"
+                "file": "cap-4/README.md"
               }
             }
           }
@@ -148,8 +149,11 @@
   },
   "active": "5c69a4e66540e443",
   "lastOpenFiles": [
-    "cap-2/README.md",
+    "Pasted image 20240212181506.png",
     "cap-3/README.md",
+    "cap-4/README.md",
+    "cap-4",
+    "cap-2/README.md",
     "cap-3",
     "README.md",
     "cap-2/cap-2.md",
