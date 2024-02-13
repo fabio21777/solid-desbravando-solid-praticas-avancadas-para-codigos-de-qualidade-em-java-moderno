@@ -147,3 +147,15 @@ linguagens de programação. Há ainda uma crítica à promessa de
 flexibilidade e reúso que, de acordo com Copeland, leva a códigos
 desnecessariamente complexos.*
 
+*No artigo CUPID - the back story (NORTH, 2021), Dan North
+argumenta que a obsessão com inversão de dependências causou
+bilhões de dólares em custos desnecessários. Segundo North, o
+princípio só deveria ser usado quando há múltiplas maneiras de
+prover uma dependência e que a maioria das dependências não
+precisam de opções. North diz ainda que há bases de código em
+que toda classe implementa exatamente uma interface apenas para
+satisfazer um framework de injeção de dependências ou de testes
+automatizados. Também há a argumentação de que a promessa de
+poder trocar uma dependência complexa como um banco de
+dados evapora assim que tentamos realizar essa tarefa na prática.*
+
