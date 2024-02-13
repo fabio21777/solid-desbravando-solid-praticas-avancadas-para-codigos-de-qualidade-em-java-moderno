@@ -114,8 +114,7 @@ Uncle Bob, no livro Agile Principles, Patterns, and Practices in C# (MARTIN, 200
 * Códigos de alto nível seriam os códigos que implementam regras de negócio.
 * Códigos de baixo nível seriam os mecanismos de entrega, os detalhes de implementação mais técnicos.
 ### Alto/baixo nível e entradas/saídas
-*No livro Clean Architecture (MARTIN, 2017), Uncle Bob diz que código de alto nível é aquele mais distante das entradas ou saídas do sistema e, por isso, muda menos frequentemente e por razões mais importantes, relacionadas ao negócio.
-Já o código de baixo nível, mais próximo das entradas ou saídas, muda mais frequentemente e com mais urgência.*
+*No livro Clean Architecture (MARTIN, 2017), Uncle Bob diz que código de alto nível é aquele mais distante das entradas ou saídas do sistema e, por isso, muda menos frequentemente e por razões mais importantes, relacionadas ao negócio. Já o código de baixo nível, mais próximo das entradas ou saídas, muda mais frequentemente e com mais urgência.*
 
 ## 4.5 PRINCÍPIO DA INVERSÃO DE DEPENDÊNCIAS(DIP)
 
@@ -125,5 +124,26 @@ Já o código de baixo nível, mais próximo das entradas ou saídas, muda mais 
 
 ### Módulos
 *O que significa o termo "módulo" usado por Uncle Bob na definição do DIP? No livro Clean Architecture (MARTIN, 2017), Uncle Bob descreve um módulo como um conjunto coeso de
-funções e dados ou, de maneira mais simples, um arquivo de código-fonte.*
+funções e dados ou, de maneira mais simples, um arquivo de código-fonte.
+*
+
+ Mecanismos de entrega - implementação concretas que o cliente terá acesso , regras de negócio não devem depender de mecanismos de entrega, mas de abstrações desses detalhes de implementação.
+
+
+*"Interfaces de serviço, em geral, são do cliente (quem as usa)."Uncle Bob, no livro Agile Principles, Patterns, and Practices in C# (MARTIN, 2006).*
+
+## 4.11 CONTRAPONTO: CRÍTICAS AO DIP
+
+*No livro SOLID is not solid (COPELAND, 2019), David
+Copeland critica o artigo Dependency Inversion Principle
+(MARTIN, 1996c), em que há a argumentação inicial em torno do
+DIP. Nesse artigo, Uncle Bob argumenta pelo DIP usando como
+exemplo um programa que envia o que é digitado em um teclado
+para uma impressora e que precisa ser adaptado para enviar os
+dados para um arquivo. Segundo Copeland, é um exemplo
+fabricado, longe do dia a dia de quem desenvolve. Além disso, o
+exemplo usa I/O, que é um problema já resolvido na maioria das
+linguagens de programação. Há ainda uma crítica à promessa de
+flexibilidade e reúso que, de acordo com Copeland, leva a códigos
+desnecessariamente complexos.*
 
