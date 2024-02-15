@@ -99,9 +99,9 @@ de uma maneira que permita que os desenvolvedores eliminem os
 IFs ruins, aqueles que frequentemente comprometem a flexibilidade
 e a habilidade de evoluir do software."*
 
-## Usando o poder das enums
+### Usando o poder das enums
 
-Com essa solução removeremos o if do código 
+Com essa solução removeremos o if do código
 
 ```java
 /*	if ("pdf".equals(formato)) {
@@ -119,7 +119,7 @@ public enum FormatoEbook {
 	PDF(new GeradorPDF()),
 	EPUB(new GeradorEPUB());
 	private GeradorEbook gerador;
-	
+
 	FormatoEbook(GeradorEbook gerador) {
 		this.gerador = gerador;
 	}
@@ -135,4 +135,82 @@ static GeradorEbook cria(FormatoEbook formato) {
 
 ```
 
+### 5.8
 
+#### Para saber mais: OCP e Spring
+
+*Com um framework de Dependency Injection como o Spring,
+podemos implementar o OCP de maneira muito elegante e flexível.
+Vamos considerar que temos a interface GeradorEbook com três
+implementações: a classe GeradorPDF , a classe GeradorEPUB e a
+classe GeradorHTML . Todas essas implementações estariam
+anotadas com @Component , conforme mencionado no capítulo
+sobre o DIP.
+Em um projeto cujas dependências são gerenciadas pelo
+Spring, ao injetarmos listas de uma determinada interface,
+obtemos todos os componentes gerenciados pelo framework que
+são implementações da interface.
+Podemos modificar a classe Cotuba , que transformamos em
+um @Component do Spring no capítulo anterior, para que receba
+uma lista com todos os*
+
+#### Para saber mais: o OCP de Bertrand Meyer
+
+*Os critérios de Meyer para código modular são:
+decomponibilidade,
+composibilidade,
+compreensibilidade,
+continuidade e proteção.
+As regras da modularidade do autor são: mapeamento direto,
+poucas interfaces, interfaces pequenas, interfaces explícitas e
+ocultação de informação (information hiding).*
+
+### 5.9 CONTRAPONTO: CRÍTICAS AO OCP
+
+*Dan North, no artigo CUPID - the back story (NORTH, 2021),
+liga o OCP a um contexto já ultrapassado, em que modificar
+software era caro e arriscado. Com técnicas modernas como
+refatoração e TDD, o código é muito mais maleável. Dessa forma,
+código deixa de ser um ativo a ser preservado e passa a ser um
+custo a ser minimizado. De acordo com North, nesse contexto
+atual, escrever código simples e mais específico passaria a fazer
+mais sentido.*
+
+*David Copeland diz, no livro SOLID is not solid (COPELAND,
+2019), que o OCP de Meyer estaria relacionado com um contexto
+em que a compilação de código era muito demorada; software
+ainda não era distribuído pela internet, mas por cópias físicas
+como CD-ROM; e sistemas eram construídos em torno de
+bibliotecas compartilhadas. Nesse contexto, recompilar e
+redistribuir o sistema como um todo era bastante oneroso tanto
+em tempo como em dinheiro. Por isso, seria interessante criar
+softwares extensíveis, mesmo que com código mais difícil de
+entender.*
+
+*Copeland critica também a descrição do OCP por Uncle Bob,
+que daria a entender que todas as classes deveriam ser altamente
+extensíveis. Copeland conclui: "(...) não adicione toneladas de
+flexibilidade da primeira vez só porque você pode precisar mudar as
+coisas depois."*
+
+*Kevlin Henney, na palestra The SOLID Design Principles
+Deconstructed (HENNEY, 2013), resgata o texto do livro Object-
+Oriented Software Construction (MEYER, 1988) de Bertrand
+Meyer, que é citado por Uncle Bob como a inspiração do OCP.*
+
+*Henney mostra que a motivação por trás do OCP original era
+reúso e que estava ligado a versionamento de módulos. Diz ainda
+que quando o livro foi escrito, na década de 80, o uso de sistemas
+de controle de versão e gerenciamento de dependências ainda não
+era comum. Henney tece um paralelo com o conceito de published
+interfaces (interfaces publicadas) do livro Refactoring (FOWLER et
+al., 1999) de Martin Fowler: classes ou interfaces que são usadas
+fora da base de código que as define.*
+
+*Ted Kaminski, em seu artigo Deconstructing SOLID design
+principles (KAMINSKI, 2019), argumenta que extensibilidade
+deveria ser um objetivo apenas nas bordas do sistema: as interfaces
+expostas publicamente para desenvolvedores de terceiros. Código
+que não está exposto nas bordas do sistema é barato de modificar e
+não precisa ser extensível: "(...) você pode até dizer que deveríamos
+ser abertos para modificação."*
